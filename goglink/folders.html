@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GogiLink</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/libs.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/flag-icon-css/css/flag-icon.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- <link rel="shortcut icon" type="image/png" href="/favicon.png"/> -->
+</head>
+<body>
+	<header class="header">
+		<div class="header__inner">
+			<div class="container">
+				<a href="/index.html" class="header__logo folders" tabindex="0">
+					<img src="./img/logo-3.png" alt="logo">
+				</a>
+				<div class="header__folder-menu">
+					<nav class="header__folder-nav">
+						<a href="" class="header__folder-links active">На главную</a>
+						<a href="" class="header__folder-links">Блог</a>
+					</nav>
+				</div>
+				<div class="header__folder-search" aria-hidden="true">
+					<form action="" class="header__folder-form">
+						<div class="flex items-center">
+							<input type="text" class="header__folder-input" placeholder="Поиск" name="search-item">
+							<div class="header__folder-search-cntrls flex">
+								<button type="button" class="btn-input mr1 btnCancelSearch" id="">Отмена</button>
+								<button type="submit" class="btn-input btn-input--blue">Поиск</button>
+							</div>
+							<a class="header__folder-close btnCancelSearch flex items-center justify-center">
+								<i class="fas fa-times"></i>
+							</a>
+						</div>
+					</form>
+				</div>
+				<div class="header__folder-add" aria-hidden="true"> 
+					<form action="" class="header__folder-form">
+						<div class="flex items-center">
+							<input type="text" class="header__folder-input" placeholder="Сохранить URL https://..." name="add-item">
+							<div class="header__folder-search-cntrls flex">
+								<button type="button" class="btn-input mr1 btnCancelAdd" id="">Отмена</button>
+								<button type="submit" class="btn-input btn-input--blue">Сохранить</button>
+							</div>
+							<a class="header__folder-close btnCancelAdd flex items-center justify-center">
+								<i class="fas fa-times"></i>
+							</a>
+						</div>
+					</form>
+				</div>
+				<div class="header__controls">
+					<a class="header__controls-link" id="searchEnable">
+						<svg class="header__controls-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512"><g>
+						    <path d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z"/>
+						  </g>
+						</svg>
+					</a>
+					<a class="header__controls-link" id="addEnable">
+						<svg class="header__controls-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 31.444 31.444" style="enable-background:new 0 0 31.444 31.444;" xml:space="preserve">
+<path d="M1.119,16.841c-0.619,0-1.111-0.508-1.111-1.127c0-0.619,0.492-1.111,1.111-1.111h13.475V1.127
+	C14.595,0.508,15.103,0,15.722,0c0.619,0,1.111,0.508,1.111,1.127v13.476h13.475c0.619,0,1.127,0.492,1.127,1.111
+	c0,0.619-0.508,1.127-1.127,1.127H16.833v13.476c0,0.619-0.492,1.127-1.111,1.127c-0.619,0-1.127-0.508-1.127-1.127V16.841H1.119z"
+	/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+					</a>
+					<div class="header__controls-user">
+						<a class="header__controls-user-link" style="background-image: url('https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png');"></a>
+						<div class="user-info">
+							<div class="user-info__header flex">
+								<div class="user-info__header-avatar" style="background-image: url('https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png'">
+								</div>
+								<div class="user-info__header-info">
+									<div class="user-info__header-name">
+										MyName
+									</div>
+									<a href="" class="user-info__header-profile">
+										Профиль
+									</a>
+								</div>
+							</div>
+							<div class="user-info__body">
+								<a href="123" class="user-info__body-link">Premium</a>
+								<a href="" class="user-info__body-link">Что нового</a>
+							</div>
+							<div class="user-info__footer">
+								<a href="" class="user-info__footer-link">Выход</a>
+							</div>
+						</div>
+					</div>
+					<div class="header__controls-lang">
+						<div class="language-main">
+							<div class="language-main__choosed"></div>
+
+							<div class="language-main__box">
+								<div class="language-main__item" data-lang="RU">
+									<span class="flag-icon flag-icon-ru"></span>
+								</div>
+								<div class="language-main__item" data-lang="ENG">
+									<span class="flag-icon flag-icon-um"></span>
+								</div>
+							</div>
+						</div>
+						<div class="language-select"></div>
+					</div>
+				</div>
+				<div class="header__mob-btn" tabindex="0">
+					<div class="header__mob-line"></div>
+					<div class="header__mob-line"></div>
+					<div class="header__mob-line"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="mob-menu">
+		<div class="mob-menu__row flex">
+			<div class="mob-menu__wrap w-100">
+				<a href="" class="main-cont__sidebar-link active">
+					<i class="fas fa-home"></i>
+					Мой список
+				</a>
+				<a href="" class="main-cont__sidebar-link">
+					<i class="fas fa-archive"></i>
+					Архив
+				</a>
+				<div class="main-cont__sidebar-fold">
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<a href="" class="main-cont__sidebar-link">
+						<i class="fas fa-folder-open"></i>
+						Папка 2
+					</a>
+					<div class="main-cont__add-folder">
+						<i class="fas fa-folder-open"></i>
+						<a class="main-cont__add-folder-link"><i class="fas fa-plus"></i>Добавить папку</a>
+						<form action="">
+							<input type="text" class="main-cont__folder-input" placeholder="Новая папка" name="new-folde-name" autocomplete="off">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <a href="" class="btn btn--transparent show-md">Начни Сейчас</a> -->
+	</div>
+
+	<section class="main-cont">
+		<div class="container flex items-start">
+			<aside class="main-cont__sidebar">
+				<div class="main-cont__sidebar-wrap">
+					<nav class="main-cont__sidebar-nav">
+						<a href="" class="main-cont__sidebar-link active">
+							<i class="fas fa-home"></i>
+							Мой список
+						</a>
+						<a href="" class="main-cont__sidebar-link">
+							<i class="fas fa-archive"></i>
+							Архив
+						</a>
+					</nav>
+					<div class="main-cont__sidebar-add">
+						<div class="main-cont__sidebar-fold">
+							<a href="" class="main-cont__sidebar-link">
+								<i class="fas fa-folder-open"></i>
+								Папка 2
+							</a>
+							<a href="" class="main-cont__sidebar-link">
+								<i class="fas fa-folder-open"></i>
+								Папка 2
+							</a>
+							<div class="main-cont__add-folder">
+								<i class="fas fa-folder-open"></i>
+								<a class="main-cont__add-folder-link"><i class="fas fa-plus"></i>Добавить папку</a>
+								<form action="">
+									<input type="text" class="main-cont__folder-input" placeholder="Новая папка" name="new-folde-name" autocomplete="off">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<div class="main-cont__main">
+				<div class="main-cont__main-folder-name">
+					<h2 class="main-cont__main-title">Мой список</h2>
+					<a href="" class="main-cont__main-title-change"><i class="fas fa-pencil-alt"></i> Изменить</a>
+				</div>
+				
+				<div class="main-cont__main-wrap flex flex-wrap">
+					<article class="main-cont__article">
+						<a href="" class="main-cont__article-img" style="background-image: url('./img/main-img4.jpg');">
+							
+						</a>
+						<a href="" class="main-cont__article-title">
+							Заголовок статьи
+						<a>
+						<a href="" class="main-cont__article-src">
+							SomeSite.com
+						</a>
+						<p class="main-cont__article-desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum sint, officia molestias voluptatibus laudantium, doloremque quam placeat labore atque repellat porro dicta et sunt iste architecto quod. Deleniti saepe molestiae laboriosam eaque, et recusandae nulla! Similique omnis autem optio non sint officia, molestias ad ex unde, odio tenetur nisi, illum.
+						</p>
+						<div class="main-cont__article-help">
+							<i class="fas fa-ellipsis-h"></i>
+							<div class="main-cont__article-help-block">
+								<a href="" class="main-cont__article-help-link share-link">
+									<i class="fas fa-share-square"></i>
+									Поделиться
+								</a>
+								<a href="" class="main-cont__article-help-link">
+									<i class="fas fa-archive"></i>
+									Архив
+								</a>
+								<a href="" class="main-cont__article-help-link delete-link">
+									<i class="far fa-trash-alt"></i>
+									Удалить
+								</a>
+							</div>
+						</div>
+						<div class="main-cont__article-date">
+							23.07.2019
+						</div>
+					</article>
+					<article class="main-cont__article">
+						<a href="" class="main-cont__article-img" style="background-image: url('./img/folders/folder1.jpg');">
+							
+						</a>
+						<a href="" class="main-cont__article-title">
+							Заголовок статьи
+						<a>
+						<a href="" class="main-cont__article-src">
+							SomeSite.com
+						</a>
+						<p class="main-cont__article-desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum sint, officia molestias voluptatibus laudantium, doloremque quam placeat labore atque repellat porro dicta et sunt iste architecto quod. Deleniti saepe molestiae laboriosam eaque, et recusandae nulla! Similique omnis autem optio non sint officia, molestias ad ex unde, odio tenetur nisi, illum.
+						</p>
+						<div class="main-cont__article-help">
+							<i class="fas fa-ellipsis-h"></i>
+							<div class="main-cont__article-help-block">
+								<a href="" class="main-cont__article-help-link share-link">
+									<i class="fas fa-share-square"></i>
+									Поделиться
+								</a>
+								<a href="" class="main-cont__article-help-link">
+									<i class="fas fa-archive"></i>
+									Архив
+								</a>
+								<a href="" class="main-cont__article-help-link delete-link">
+									<i class="far fa-trash-alt"></i>
+									Удалить
+								</a>
+							</div>
+						</div>
+						<div class="main-cont__article-date">
+							23.07.2019
+						</div>
+					</article>
+					<article class="main-cont__article">
+						<a href="" class="main-cont__article-img" style="background-image: url('./img/folders/folder2.jpg');">
+							
+						</a>
+						<a href="" class="main-cont__article-title">
+							Заголовок статьи
+						<a>
+						<a href="" class="main-cont__article-src">
+							SomeSite.com
+						</a>
+						<p class="main-cont__article-desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum sint, officia molestias voluptatibus laudantium, doloremque quam placeat labore atque repellat porro dicta et sunt iste architecto quod. Deleniti saepe molestiae laboriosam eaque, et recusandae nulla! Similique omnis autem optio non sint officia, molestias ad ex unde, odio tenetur nisi, illum.
+						</p>
+						<div class="main-cont__article-help">
+							<i class="fas fa-ellipsis-h"></i>
+							<div class="main-cont__article-help-block">
+								<a href="" class="main-cont__article-help-link share-link">
+									<i class="fas fa-share-square"></i>
+									Поделиться
+								</a>
+								<a href="" class="main-cont__article-help-link">
+									<i class="fas fa-archive"></i>
+									Архив
+								</a>
+								<a href="" class="main-cont__article-help-link delete-link">
+									<i class="far fa-trash-alt"></i>
+									Удалить
+								</a>
+							</div>
+						</div>
+						<div class="main-cont__article-date">
+							23.07.2019
+						</div>
+					</article>
+					<article class="main-cont__article">
+						<a href="" class="main-cont__article-img" style="background-image: url('./img/folders/folder3.jpg');">
+							
+						</a>
+						<a href="" class="main-cont__article-title">
+							Заголовок статьи
+						<a>
+						<a href="" class="main-cont__article-src">
+							SomeSite.com
+						</a>
+						<p class="main-cont__article-desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum sint, officia molestias voluptatibus laudantium, doloremque quam placeat labore atque repellat porro dicta et sunt iste architecto quod. Deleniti saepe molestiae laboriosam eaque, et recusandae nulla! Similique omnis autem optio non sint officia, molestias ad ex unde, odio tenetur nisi, illum.
+						</p>
+						<div class="main-cont__article-help">
+							<i class="fas fa-ellipsis-h"></i>
+							<div class="main-cont__article-help-block">
+								<a href="" class="main-cont__article-help-link share-link">
+									<i class="fas fa-share-square"></i>
+									Поделиться
+								</a>
+								<a href="" class="main-cont__article-help-link">
+									<i class="fas fa-archive"></i>
+									Архив
+								</a>
+								<a href="" class="main-cont__article-help-link delete-link">
+									<i class="far fa-trash-alt"></i>
+									Удалить
+								</a>
+							</div>
+						</div>
+						<div class="main-cont__article-date">
+							23.07.2019
+						</div>
+					</article>
+					<article class="main-cont__article">
+						<a href="" class="main-cont__article-img" style="background-image: url('./img/folders/folder4.jpg');">
+							
+						</a>
+						<a href="" class="main-cont__article-title">
+							Заголовок статьи
+						<a>
+						<a href="" class="main-cont__article-src">
+							SomeSite.com
+						</a>
+						<p class="main-cont__article-desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum sint, officia molestias voluptatibus laudantium, doloremque quam placeat labore atque repellat porro dicta et sunt iste architecto quod. Deleniti saepe molestiae laboriosam eaque, et recusandae nulla! Similique omnis autem optio non sint officia, molestias ad ex unde, odio tenetur nisi, illum.
+						</p>
+						<div class="main-cont__article-help">
+							<i class="fas fa-ellipsis-h"></i>
+							<div class="main-cont__article-help-block">
+								<a href="" class="main-cont__article-help-link share-link">
+									<i class="fas fa-share-square"></i>
+									Поделиться
+								</a>
+								<a href="" class="main-cont__article-help-link">
+									<i class="fas fa-archive"></i>
+									Архив
+								</a>
+								<a href="" class="main-cont__article-help-link delete-link">
+									<i class="far fa-trash-alt"></i>
+									Удалить
+								</a>
+							</div>
+						</div>
+						<div class="main-cont__article-date">
+							23.07.2019
+						</div>
+					</article>
+					<article class="main-cont__article">
+						<a href="" class="main-cont__article-img" style="background-image: url('./img/folders/folder5.jpg');">
+							
+						</a>
+						<a href="" class="main-cont__article-title">
+							Заголовок статьи
+						<a>
+						<a href="" class="main-cont__article-src">
+							SomeSite.com
+						</a>
+						<p class="main-cont__article-desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum sint, officia molestias voluptatibus laudantium, doloremque quam placeat labore atque repellat porro dicta et sunt iste architecto quod. Deleniti saepe molestiae laboriosam eaque, et recusandae nulla! Similique omnis autem optio non sint officia, molestias ad ex unde, odio tenetur nisi, illum.
+						</p>
+						<div class="main-cont__article-help">
+							<i class="fas fa-ellipsis-h"></i>
+							<div class="main-cont__article-help-block">
+								<a href="" class="main-cont__article-help-link share-link">
+									<i class="fas fa-share-square"></i>
+									Поделиться
+								</a>
+								<a href="" class="main-cont__article-help-link">
+									<i class="fas fa-archive"></i>
+									Архив
+								</a>
+								<a href="" class="main-cont__article-help-link delete-link">
+									<i class="far fa-trash-alt"></i>
+									Удалить
+								</a>
+							</div>
+						</div>
+						<div class="main-cont__article-date">
+							23.07.2019
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="modal" id="shareSocials">
+		<div class="modal__inner">
+			<h2 class="modal__title">Поделитесь своей ссылкой</h2>
+			<p class="modal__desc"></p>
+			<div class="modal__socials-wrap">
+				<a href="" class="btn-socials vkontakte tc">
+					<i class="fab fa-vk"></i>
+					Поделиться через Вконтакте
+				</a>
+				<a href="" class="btn-socials facebook tc">
+					<i class="fab fa-facebook-square"></i>
+					Поделиться через Facebook
+				</a>
+				<a href="" class="btn-socials odnoklassniki tc">
+					<i class="fab fa-odnoklassniki"></i>
+					Поделиться через Одноклассники
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="deleteLink">
+		<div class="modal__inner">
+			<h2 class="modal__title">Удалить материал</h2>
+			<p class="modal__desc">
+				Вы действительно хотите удалить этот материал? Это действие нельзя отменить.
+			</p>
+			<div class="flex justify-end">
+				<button type="button" class="btn-input mr1" id="cancelDeletingLink">Отмена</button>
+				<button type="button" class="btn-input mr1 btn-input--red" id="">Удалить</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="editFolderName">
+		<div class="modal__inner">
+			<h2 class="modal__title">Изменить</h2>
+			<p class="modal__desc">
+				*Введите новое название вашей папки
+			</p>
+			<form action="">
+				<div class="flex flex-column">
+					<div class="flex items-center mb3">
+						<span class="modal__label">Название папки: </span>
+						<input class="modal__input" type="text" value="Папка 2" maxlength="15" name="newFolderName">
+					</div>
+					<div class="flex justify-end">
+						<button type="button" class="btn-input mr1" id="cancelEditingLink">Отмена</button>
+						<button type="submit" class="btn-input mr1 btn-input--blue" id="">Применить</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
