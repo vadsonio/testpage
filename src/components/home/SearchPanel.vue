@@ -171,7 +171,7 @@
         margin: 0;
       }
       @include rwd(2000){
-        max-width: 1100px;
+        // max-width: 1100px;
       }
       @include rwd(1800){
         max-width: 800px;
