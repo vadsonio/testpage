@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cherry</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/libs.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/datepicker/css/datepicker.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="header">
+		<div class="flex justify-between items-center">
+			<div class="header__menu flex items-center">
+				<a href="" class="header__logo">
+					<img src="./img/logo.png" alt="logo">
+				</a>
+				<nav class="header__nav">
+					<a href="" class="header__link">home</a>
+					<a href="" class="header__link">about us</a>
+					<a href="" class="header__link">page</a>
+					<a href="" class="header__link">blog</a>
+					<a href="" class="header__link">contacts</a>
+					<div class="nav-underbar"></div>
+				</nav>
+			</div>
+			<div class="header__auth">
+				<div class="flex items-center">
+					<nav class="header__nav">
+						<a href="" class="header__link">login</a>
+						<a href="" class="header__link">sign up</a>
+					</nav>
+					<a href="" class="btn btn--transparent hide-mob">choose plan</a>
+					<button type="button" class="open-mobm">menu</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="main-section">
+		<div class="main-section__inner">
+			<div class="container">
+				<div class="main-section__text">
+					<div class="main-section__title">make your body</div>
+					<div class="main-section__title main-theme-color">beautiful</div>
+					<div class="main-section__subtitle">Lorem ipsum dolor sit amet, consectetur</div>
+					<a href="" class="btn btn--theme">get in touch</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="booking">
+		<div class="container">
+			<div class="booking__wrap">
+				<div class="booking__main">
+					<div class="booking__main-img"></div>
+					<div class="booking__main-inputs">
+						<h2 class="booking__main-title">free 7 days</h2>
+						<h2 class="booking__main-subtitle">online booking</h2>
+						<div>
+							<form action="">
+								<div class="form flex flex-wrap">
+									<div class="booking__col">
+										<div class="form__item group">
+											<div class="form-sel">
+												<select>
+													<option value="" disabled>People</option>
+													<option value="1 people">1 People</option>
+													<option value="2 people">2 People</option>
+													<option value="3 people">3 People</option>
+													<option value="4 people">4 People</option>
+													<option value="5 people">5 People</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="booking__col">
+										<div class="form__item calendar">
+											<input name="date" type='text' class="datepicker-here" placeholder="Date" autocomplete="off" required>
+										</div>
+									</div>
+									<div class="booking__col">
+										<div class="form__item time">
+											<input name="time" type="text" placeholder="Time" class="timeInput" autocomplete="off" required>
+											<div class="time-range">
+											    <div class="time-range__sliders">
+											      <div class="time-range__row">
+											        <input class="time-range__hours" placeholder="00" disabled>
+											        <input type="range" id="rangeHour" min="0" max="23" value="12" class="time-range__rangeH rangeMain">
+											      </div>
+											      <div class="time-range__row">
+											        <input class="time-range__minutes" placeholder="00" disabled>
+											        <input type="range" id="rangeMinutes" min="0" max="60" value="30" class="time-range__rangeM rangeMain">
+											      </div>
+											  </div>
+											</div>
+										</div>
+									</div>
+									<div class="booking__col">
+										<div class="form__item name">
+											<input name="name" type='text' placeholder="Name" required>
+										</div>
+									</div>
+									<div class="booking__col">
+										<div class="form__item phone">
+											<input name="phone" type='text' placeholder="Phone" required>
+										</div>
+									</div>
+									<div class="booking__col">
+										<div class="form__item email">
+											<input name="email" type="email" placeholder="Email" required>
+										</div>
+									</div>
+								</div>
+								<div class="tc">
+									<button class="btn btn--theme">get in touch</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="booking__text">
+					<div class="booking__text-wrap">
+						<div class="booking__text-col">
+							<div class="booking__text-title">
+								welcome to <span class="colorTheme">fitness</span>
+							</div>
+							<div class="booking__text-subtitle">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+							</div>
+							<div class="booking__text-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+							</div>
+							<a href="" class="btn btn--theme">get in touch</a>
+						</div>
+						<div class="booking__text-img">
+							<img src="./img/booking-2.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="services">
+		<div class="container">
+			<div class="services__title">
+				welcome to <span class="colorTheme">fitness</span>
+			</div>
+			<div class="services__subtitle">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+			</div>
+			<div class="services__wrap flex flex-wrap">
+				<div class="services__col">
+					<div class="services__col-img">
+					</div>
+					<div class="services__col-text">
+						<div class="services__col-title">
+							Basic Crossfit
+						</div>
+						<div class="services__col-desc">
+							Our staff includes amazing professionals that have an eye for crossfit.
+						</div>
+						<button class="btn btn--theme">get in touch</button>
+					</div>
+				</div>
+				<div class="services__col">
+					<div class="services__col-img">
+					</div>
+					<div class="services__col-text">
+						<div class="services__col-title">
+							Fitness Studio
+						</div>
+						<div class="services__col-desc">
+							Work out in fitness groups or with a personal certified trainer in our gym center.
+						</div>
+						<button class="btn btn--theme">get in touch</button>
+					</div>
+				</div>
+				<div class="services__col">
+					<div class="services__col-img">
+					</div>
+					<div class="services__col-text">
+						<div class="services__col-title">
+							Yoga Classes
+						</div>
+						<div class="services__col-desc">
+							What do you think about yoga? If you have a passion for this activity, we’ve got a special program.
+						</div>
+						<button class="btn btn--theme">get in touch</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="personal">
+		<div class="container">
+			<div class="personal__text">
+				<div class="personal__text-title ttu">
+					we trained with
+				</div>
+				<div class="personal__text-subtitle ttu">
+					personal trainer
+				</div>
+				<button class="btn btn--theme">
+					get in touch
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="trainers">
+		<div class="container">
+			<div class="trainers__title">
+				expert <span class="colorTheme">trainers</span>
+			</div>
+			<div class="trainers__subtitle">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+			</div>
+			<div class="trainers__wrap flex flex-wrap">
+				<div class="trainers__col">
+					<div class="trainers__col-img">
+					</div>
+					<div class="trainers__col-text">
+						<div class="trainers__col-title tc">
+							Sarra Miller
+						</div>
+						<div class="trainers__col-subtitle tc ttu colorTheme">
+							spinning trainer
+						</div>
+						<div class="trainers__col-desc tc">
+							Our staff includes amazing professionals that have an eye for crossfit.
+						</div>
+					</div>
+				</div>
+				<div class="trainers__col">
+					<div class="trainers__col-img">
+					</div>
+					<div class="trainers__col-text">
+						<div class="trainers__col-title tc">
+							John Doe
+						</div>
+						<div class="trainers__col-subtitle tc ttu colorTheme">
+							bootcamp trainer
+						</div>
+						<div class="trainers__col-desc tc">
+							Our staff includes amazing professionals that have an eye for crossfit.
+						</div>
+					</div>
+				</div>
+				<div class="trainers__col">
+					<div class="trainers__col-img">
+					</div>
+					<div class="trainers__col-text">
+						<div class="trainers__col-title tc">
+							Some Guy
+						</div>
+						<div class="trainers__col-subtitle tc ttu colorTheme">
+							fitness trainer
+						</div>
+						<div class="trainers__col-desc tc">
+							Our staff includes amazing professionals that have an eye for crossfit.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="two-cols">
+		<div class="two-cols__col tc">
+			<div class="two-cols__text">
+				<div class="two-cols__title ttu">
+					tru for free
+				</div>
+				<div class="two-cols__subtitle ttu">
+					free 5 days pass
+				</div>
+				<button class="btn btn--theme">get in touch</button>
+			</div>
+		</div>
+		<div class="two-cols__col tc">
+			<div class="two-cols__text">
+				<div class="two-cols__title ttu">
+					call us and tru
+				</div>
+				<div class="two-cols__subtitle ttu">
+					957 547 4545
+				</div>
+				<button class="btn btn--theme">get in touch</button>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrap flex">
+				<div class="footer__col w-40 flex-shrink-0">
+					<div class="footer__form">
+						<div class="footer__form-title ttu">
+							fitne<span class="colorTheme">ss</span>	
+						</div>
+						<div class="footer__form-desc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+						</div>
+						<div class="footer__form-socials flex">
+							Follow Us:
+							<ul class="flex mv0">
+								<li><a href="" class="footer__social-link"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="" class="footer__social-link"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="" class="footer__social-link"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="" class="footer__social-link"><i class="fab fa-pinterest-p"></i></a></li>
+								<li><a href="" class="footer__social-link"><i class="fab fa-google-plus-g"></i></a></li>
+								<li><a href="" class="footer__social-link"><i class="fab fa-youtube"></i></a></li>
+								<li><a href="" class="footer__social-link"><i class="fab fa-dribbble"></i></a></li>
+								<li><a href="" class="footer__social-link"><i class="fab fa-tumblr"></i></a></li>
+							</ul>
+						</div>
+						<form action="">
+							<div class="subscribe-field flex">
+								<input type="email" class="subscribe-field__input" placeholder="Your Email..." name="subscr-email" required>
+								<button class="subscribe-field__btn btn btn--theme">subscribe</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="footer__col w-35">
+					<div class="footer__articles">
+						<div class="footer__articles-title ttu">
+							blogs
+						</div>
+						<a href="" class="footer__articles-item flex items-center-ns">
+							<div class="footer__articles-img">
+								<img src="./img/footer-article-1.png" alt="">
+							</div>
+							<div class="footer__articles-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing
+							</div>
+						</a>
+						<a href="" class="footer__articles-item flex">
+							<div class="footer__articles-img">
+								<img src="./img/footer-article-2.png" alt="">
+							</div>
+							<div class="footer__articles-text">
+								Consectetur adipiscing elit, sed do eiusmod tempor
+							</div>
+						</a>
+						<a href="" class="footer__articles-item flex">
+							<div class="footer__articles-img">
+								<img src="./img/footer-article-3.png" alt="">
+							</div>
+							<div class="footer__articles-text">
+								Sed do eiusmod tempor incididunt ut labore
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="footer__col w-30">
+					<div class="footer__insta">
+						<div class="footer__insta-title ttu">
+							instagram
+						</div>
+						<div class="footer__insta-gallery flex flex-wrap">
+							<a href="" class="footer__insta-item">
+								<img src="./img/insta-1.png" alt="mounteens">
+							</a>
+							<a href="" class="footer__insta-item">
+								<img src="./img/insta-2.png" alt="">
+							</a>
+							<a href="" class="footer__insta-item">
+								<img src="./img/insta-3.png" alt="">
+							</a>
+							<a href="" class="footer__insta-item">
+								<img src="./img/insta-4.png" alt="">
+							</a>
+							<a href="" class="footer__insta-item">
+								<img src="./img/insta-5.png" alt="">
+							</a>
+							<a href="" class="footer__insta-item">
+								<img src="./img/insta-6.png" alt="">
+							</a>
+							<a href="" class="footer__insta-item">
+								<img src="./img/insta-7.png" alt="">
+							</a>
+							<a href="" class="footer__insta-item">
+								<img src="./img/insta-8.png" alt="">
+							</a>
+							<a href="" class="footer__insta-item">
+								<img src="./img/insta-9.png" alt="">
+							</a>
+						</div>
+						<a href="" class="footer__insta-more">
+							View more photos
+						</a>
+					</div>
+					</div>
+				</div>	
+			</div>
+			<div class="footer__copyright tc colorTheme">
+				© 2018 free-PSD-template
+			</div>
+		</div>
+	</footer>
+
+	<div class="mob-menu" aria-hidden="true" >
+		<div class="mob-menu__head">
+			<button class="close-mobm">
+				<i class="far fa-times-circle"></i>
+			</button>
+		</div>
+		<div class="mob-menu__body">
+			<nav>
+				<a href="" class="mob__link">home</a>
+				<a href="" class="mob__link">about us</a>
+				<a href="" class="mob__link">page</a>
+				<a href="" class="mob__link">blog</a>
+				<a href="" class="mob__link">contacts</a>
+				<a href="" class="mob__link">login</a>
+				<a href="" class="mob__link">sign up</a>
+				<a href="" class="mob__link">choose plan</a>
+			</nav>
+		</div>
+	</div>
+
+	<a class="anchor-top">
+		<i class="fas fa-chevron-up"></i>
+	</a>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
