@@ -1,0 +1,160 @@
+{
+  "apartments": [
+    {
+      "id": 0,
+      "bathrooms": "2",
+      "sqft": "2400",
+      "bedrooms": "2",
+      "location": "DELTA, some address in Britain",
+      "place": "LONDON, BRITAIN",
+      "name": "Bedroom Unbeatable",
+      "price": "30.00",
+      "image": "https://www.marinabaysands.com/content/dam/singapore/marinabaysands/master/main/home/hotel/rooms-suites/premier-room/premiere%201_1920x960.jpg",
+      "liked": false
+    },
+    {
+      "id": 1,
+      "bathrooms": "1",
+      "sqft": "1900",
+      "bedrooms": "2",
+      "location": "DELTA, some address in France",
+      "place": "PARIS, FRANCE",
+      "name": "Bedroom Boundless",
+      "price": "50.00",
+      "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+      "liked": false
+    },
+    {
+      "id": 2,
+      "bathrooms": "2",
+      "sqft": "2100",
+      "bedrooms": "2",
+      "location": "DELTA, some address in Germany",
+      "place": "BERLIN, GERMANY",
+      "name": "Bedroom Spacious",
+      "price": "60.00",
+      "image": "http://www.chelseatoronto.com/en/uploads/images/2015/06/club-room.jpg",
+      "liked": false
+    },
+    {
+      "id": 3,
+      "bathrooms": "2",
+      "sqft": "2500",
+      "bedrooms": "1",
+      "location": "DELTA, some address in Denmark",
+      "place": "COPENHAGEN, DENMARK",
+      "name": "Bedroom Subtantial",
+      "price": "70.00",
+      "image": "https://d2ile4x3f22snf.cloudfront.net/wp-content/uploads/sites/282/2018/04/23070030/Room-1.jpg",
+      "liked": false
+    },
+    {
+      "id": 4,
+      "bathrooms": "1",
+      "sqft": "2400",
+      "bedrooms": "2",
+      "location": "DELTA, some address in Germany",
+      "place": "BERLIN, GERMANY",
+      "name": "Bedroom Superior",
+      "price": "75.00",
+      "image": "https://images.pexels.com/photos/1669799/pexels-photo-1669799.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "liked": false
+    },
+    {
+      "id": 5,
+      "bathrooms": "2",
+      "sqft": "2200",
+      "bedrooms": "2",
+      "location": "DELTA, some address in Italy",
+      "place": "ROMA, ITALY",
+      "name": "Bedroom Sunshine",
+      "price": "80.00",
+      "image": "https://teighmore-assets.s3.amazonaws.com/media/filer_public_thumbnails/filer_public/f8/43/f8437568-8cd3-402f-87cd-27919c2d897f/rooms-and-suites-main-image.jpg__954x493_q85_crop_subsampling-2_upscale.jpg",
+      "liked": false
+    },
+    {
+      "id": 6,
+      "bathrooms": "2",
+      "sqft": "2400",
+      "bedrooms": "2",
+      "location": "DELTA, some address in Britain",
+      "place": "LONDON, BRITAIN",
+      "name": "Bedroom Unbeatable",
+      "price": "30.00",
+      "image": "https://www.marinabaysands.com/content/dam/singapore/marinabaysands/master/main/home/hotel/rooms-suites/premier-room/premiere%201_1920x960.jpg",
+      "liked": false
+    },
+    {
+      "id": 7,
+      "bathrooms": "1",
+      "sqft": "1900",
+      "bedrooms": "2",
+      "location": "DELTA, some address in France",
+      "place": "PARIS, FRANCE",
+      "name": "Bedroom Boundless",
+      "price": "50.00",
+      "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+      "liked": false
+    },
+    {
+      "id": 8,
+      "bathrooms": "2",
+      "sqft": "2100",
+      "bedrooms": "2",
+      "location": "DELTA, some address in Germany",
+      "place": "BERLIN, GERMANY",
+      "name": "Bedroom Spacious",
+      "price": "60.00",
+      "image": "http://www.chelseatoronto.com/en/uploads/images/2015/06/club-room.jpg",
+      "liked": false
+    },
+    {
+      "id": 9,
+      "bathrooms": "2",
+      "sqft": "2500",
+      "bedrooms": "1",
+      "location": "DELTA, some address in Denmark",
+      "place": "COPENHAGEN, DENMARK",
+      "name": "Bedroom Subtantial",
+      "price": "70.00",
+      "image": "https://d2ile4x3f22snf.cloudfront.net/wp-content/uploads/sites/282/2018/04/23070030/Room-1.jpg",
+      "liked": false
+    },
+    {
+      "id": 10,
+      "bathrooms": "1",
+      "sqft": "2400",
+      "bedrooms": "2",
+      "location": "DELTA, some address in Germany",
+      "place": "BERLIN, GERMANY",
+      "name": "Bedroom Superior",
+      "price": "75.00",
+      "image": "https://images.pexels.com/photos/1669799/pexels-photo-1669799.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "liked": false
+    },
+    {
+      "id": 11,
+      "bathrooms": "2",
+      "sqft": "2200",
+      "bedrooms": "2",
+      "location": "DELTA, some address in Italy",
+      "place": "ROMA, ITALY",
+      "name": "Bedroom Sunshine",
+      "price": "80.00",
+      "image": "https://teighmore-assets.s3.amazonaws.com/media/filer_public_thumbnails/filer_public/f8/43/f8437568-8cd3-402f-87cd-27919c2d897f/rooms-and-suites-main-image.jpg__954x493_q85_crop_subsampling-2_upscale.jpg",
+      "liked": false
+    },
+    {
+      "id": 12,
+      "bathrooms": "2",
+      "sqft": "2400",
+      "bedrooms": "3",
+      "location": "DELTA, some address in Italy",
+      "place": "ROMA, ITALY",
+      "name": "Bedroom Sunshine",
+      "price": "80.00",
+      "image": "https://teighmore-assets.s3.amazonaws.com/media/filer_public_thumbnails/filer_public/f8/43/f8437568-8cd3-402f-87cd-27919c2d897f/rooms-and-suites-main-image.jpg__954x493_q85_crop_subsampling-2_upscale.jpg",
+      "liked": false
+    }
+  ]
+}

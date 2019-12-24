@@ -1,0 +1,101 @@
+.search-block{
+  margin: 0 15px 15px;
+  min-width: 200px;
+  position: relative;
+  &__label{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    color: $headerText;
+  }
+  &__active{
+    padding-left: 35px;
+    padding-right: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    border: 1px solid #cfd8dc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 14px;
+    overflow: hidden;
+    color: $headerText;
+    &:before{
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 9px;
+      width: 15px;
+      height: 15px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    input[type="text"]{
+      width: 100%;
+      height: 100%;
+      border: none;
+      outline: none;
+      color: $headerText;
+      &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $headerText;
+        opacity: 1; /* Firefox */
+      }
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $headerText;
+      }
+      &::-ms-input-placeholder { /* Microsoft Edge */
+        color: $headerText;
+      }
+    }
+  }
+  &__list{
+    padding: 10px;
+    position: absolute;
+    top: calc(100% + 5px);
+    width: 100%;
+    max-height: 200px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+    z-index: 1;
+    overflow: auto;
+    background: #fff;
+    li{
+      -webkit-transition: .2s;
+      -moz-transition: .2s;
+      -ms-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+      &:hover{
+        padding-left: 5px;
+        background-color: rgba(0,0,0,.2);
+      }
+    }
+  }
+  &__clear{
+    position: absolute;
+    right: 8px;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+
+  }
+  &__submit{
+    margin: 0 15px 15px;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+//tabs
+.tab-panel{
+  .tabs{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}

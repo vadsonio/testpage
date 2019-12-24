@@ -1,0 +1,39 @@
+{
+  "cities": [
+    {
+      "name": "London",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81rzb3aioKL._SL1500_.jpg",
+      "new": false
+    },
+    {
+      "name": "Paris",
+      "img": "http://farm7.static.flickr.com/6174/6163614341_cb6525b830_o.jpg",
+      "new": false
+    },
+    {
+      "name": "Italy",
+      "img": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-1.2.1&w=1000&q=80",
+      "new": false
+    },
+    {
+      "name": "England",
+      "img": "https://api-abroad.sfo2.cdn.digitaloceanspaces.com/images/_1200x675_crop_center-center_82_line/england-london-skyline-from-above-551334580-Hero.jpg",
+      "new": true
+    },
+    {
+      "name": "Copenhagen",
+      "img": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/04/10/16/copenhagen.jpg?w968h681",
+      "new": false
+    },
+    {
+      "name": "Berlin",
+      "img": "https://kidpassage.com/images/publications/berlin-v-fevrale-otdyh-pogoda/1708_Berlin-v-fevrale-gallery1192758404.jpg",
+      "new": true
+    },
+    {
+      "name": "Russia",
+      "img": "https://images.unsplash.com/photo-1512495039889-52a3b799c9bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+      "new": true
+    }
+  ]
+}

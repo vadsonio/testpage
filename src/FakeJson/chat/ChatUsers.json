@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "name": "John Carter",
+      "status": "Some guy",
+      "id": 1,
+      "avatar": "https://png.pngtree.com/element_our/png/20181206/users-vector-icon-png_260862.jpg",
+      "myself": true
+    },
+    {
+      "name": "Elon Musk",
+      "status": "Administrator",
+      "id": 2,
+      "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/75/755f87b22d0cf6f2dacd7e259d4b0023f17d8571_full.jpg",
+      "myself": false
+    },
+    {
+      "name": "Michael Piterson",
+      "status": "Designer",
+      "id": 3,
+      "avatar": "https://microhealth.com/assets/images/illustrations/personal-user-illustration-@2x.png",
+      "myself": false
+    }
+  ]
+}

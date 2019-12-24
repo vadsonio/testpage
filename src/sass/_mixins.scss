@@ -1,0 +1,54 @@
+// Small devices (other)
+@mixin sm {
+  @media (max-width: #{$screen-sm-min}){
+    @content
+  }
+}
+
+// Medium devices (768px)
+@mixin md {
+  @media (max-width: #{$screen-md-min}){
+    @content
+  }
+}
+
+// Large devices (992px)
+@mixin lg{
+  @media (max-width: #{$screen-lg-min}){
+    @content
+  }
+}
+
+// Extra large devices (1170px)
+@mixin xl{
+  @media (max-width: #{$screen-xl-min}){
+    @content
+  }
+}
+
+// Custom devices
+@mixin rwd($screen){
+  @media (max-width: $screen+'px'){
+    @content
+  }
+}
+
+
+
+// absolute vertical centered
+@mixin absVerticalCenter{
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+// absolute vertical horizontal centered
+@mixin absVertHorCenter{
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+

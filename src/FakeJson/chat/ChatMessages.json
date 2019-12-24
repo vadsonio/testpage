@@ -1,0 +1,58 @@
+{
+  "messages": [
+    {
+      "chatNumb": 1,
+      "messageInChat": 1,
+      "userOneId": 1,
+      "userTwoId": 2,
+      "fromUser": 1,
+      "time": "18:30",
+      "text": "Hello! I`m so confused about yesterday..."
+    },
+    {
+      "chatNumb": 1,
+      "messageInChat": 2,
+      "userOneId": 1,
+      "userTwoId": 2,
+      "fromUser": 1,
+      "time": "18:35",
+      "text": "Hello! I`m so confused about yesterday..."
+    },
+    {
+      "chatNumb": 1,
+      "messageInChat": 3,
+      "userOneId": 1,
+      "userTwoId": 2,
+      "fromUser": 1,
+      "time": "18:40",
+      "text": "Hello! I`m so confused about yesterday..."
+    },
+    {
+      "chatNumb": 1,
+      "messageInChat": 4,
+      "userOneId": 1,
+      "userTwoId": 2,
+      "fromUser": 1,
+      "time": "18:45",
+      "text": "Hello! I`m so confused about yesterday..."
+    },
+    {
+      "chatNumb": 1,
+      "messageInChat": 5,
+      "userOneId": 1,
+      "userTwoId": 2,
+      "fromUser": 2,
+      "time": "18:50",
+      "text": "Hello! I`m so confused about yesterday..."
+    },
+    {
+      "chatNumb": 1,
+      "messageInChat": 6,
+      "userOneId": 1,
+      "userTwoId": 2,
+      "fromUser": 2,
+      "time": "19:00",
+      "text": "Hello! I`m so confused about yesterday..."
+    }
+  ]
+}

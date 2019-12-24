@@ -1,0 +1,36 @@
+.btn-app{
+  padding: 10px 25px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  background: transparent;
+  &--transparent_black{
+    border: 2px solid $headerText;
+    color: $headerText;
+    &:hover{
+      color: #fff!important;
+      background: $headerText;
+      text-decoration: none;
+    }
+  }
+  &--transparent_white{
+    border: 2px solid #fff;
+    color: #fff;
+    &:hover{
+      color: rgba(250,250,250, .8);
+      text-decoration: none;
+    }
+  }
+  &--filled_blue{
+    border: none;
+    height: 35px;
+    line-height: 1;
+    font-size: 14px;
+    color: #fff!important;
+    background: #4588f2;
+    &:hover{
+      opacity: .9;
+    }
+  }
+}
