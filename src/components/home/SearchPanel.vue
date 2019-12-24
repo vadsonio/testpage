@@ -160,7 +160,7 @@
       margin: 0 auto;
       padding: 25px 0;
       width: 100%;
-      max-width: 1100px;
+      max-width: 800px;
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
       border-radius: 4px;
@@ -170,12 +170,12 @@
       .row{
         margin: 0;
       }
-      @include rwd(2000){
-        // max-width: 1100px;
-      }
-      @include rwd(1800){
-        max-width: 800px;
-      }
+      // @include rwd(4000){
+      //   max-width: 800px;
+      // }
+      // @include rwd(1800){
+      //   max-width: 800px;
+      // }
     }
   }
   .search-block__submit{
