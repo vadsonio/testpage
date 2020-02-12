@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main-wrap">
     <MobileMenu :showMobSwitch="openMobActive" @closeMob="mobileMenuShowParent"/>
     <div class="main" :class="{showMob: showMobActive}">
       <Header :showMobSwitchIcon="openMobActive" @mobileMenuShowChild="mobileMenuShowParent"/>
