@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/libs.min.css">
+	<link rel="stylesheet" type="text/css" href="./libs/fontawesome 5/css/all.css">
+	<!-- <link rel="stylesheet" type="text/html" href="./libs/video.js/dist/video-js.min.css"> -->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<div class="app">
+		<div class="app__mob-menu">
+			<div class="mob-menu__overlay"></div>
+			<aside class="mob-menu__aside">
+				<ul class="mob-menu__list" id="accordion">
+					<li class="mob-menu__item">
+						<h3 class="mob-menu__item-heading">
+							Главное
+						</h3>
+					</li>
+					<li class="mob-menu__item">
+						<a class="mob-menu__link" id="headingOne" data-toggle="collapse" data-target="#video-mob-cat" aria-expanded="false" aria-controls="video-mob-cat">Видео
+							<i class="fas fa-chevron-down"></i>
+						</a>
+
+						<div class="collapse" id="video-mob-cat" aria-labelledby="headingOne" data-parent="#accordion">
+							<ul class="mob-menu__sublist" >
+								<li class="mob-menu__subitem">
+									<a href="" class="mob-menu__sublink">Видео 1</a>
+								</li>
+								<li class="mob-menu__subitem">
+									<a href="" class="mob-menu__sublink">Видео 2</a>
+								</li>
+								<li class="mob-menu__subitem">
+									<a href="" class="mob-menu__sublink">Видео 3</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="mob-menu__item">
+						<a class="mob-menu__link" id="headingTwo" data-toggle="collapse" data-target="#categories-mob-cat" aria-expanded="false" aria-controls="categories-mob-cat">Категории
+							<i class="fas fa-chevron-down"></i>
+						</a>
+
+						<div class="collapse" id="categories-mob-cat" aria-labelledby="headingTwo" data-parent="#accordion">
+							<ul class="mob-menu__sublist">
+								<li class="mob-menu__subitem">
+									<a href="" class="mob-menu__sublink">Категория 1</a>
+								</li>
+								<li class="mob-menu__subitem">
+									<a href="" class="mob-menu__sublink">Категория 2</a>
+								</li>
+								<li class="mob-menu__subitem">
+									<a href="" class="mob-menu__sublink">Категория 3</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="mob-menu__item">
+						<a class="mob-menu__link" id="headingThree" data-toggle="collapse" data-target="#stars-mob-cat" aria-expanded="false" aria-controls="stars-mob-cat">Порнозвезды
+							<i class="fas fa-chevron-down"></i>
+						</a>
+
+						<div class="collapse" id="stars-mob-cat" aria-labelledby="headingThree" data-parent="#accordion">
+							<ul class="mob-menu__sublist">
+								<li class="mob-menu__subitem">
+									<a href="" class="mob-menu__sublink">Порнозвезда 1</a>
+								</li>
+								<li class="mob-menu__subitem">
+									<a href="" class="mob-menu__sublink">Порнозвезда 2</a>
+								</li>
+								<li class="mob-menu__subitem">
+									<a href="" class="mob-menu__sublink">Порнозвезда 3</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="mob-menu__item">
+						<a class="mob-menu__link" id="headingFour" data-toggle="collapse" data-target="#folders-mob-cat" aria-expanded="false" aria-controls="stars-mob-cat">Плейлисты
+							<i class="fas fa-chevron-down"></i>
+						</a>
+
+						<div class="collapse" id="folders-mob-cat" aria-labelledby="headingFour" data-parent="#accordion">
+							<ul class="mob-menu__sublist">
+								<li class="mob-menu__subitem">
+									<a href="" class="mob-menu__sublink">Плейлист 1</a>
+								</li>
+								<li class="mob-menu__subitem">
+									<a href="" class="mob-menu__sublink">Плейлист 2</a>
+								</li>
+								<li class="mob-menu__subitem">
+									<a href="" class="mob-menu__sublink">Плейлист 3</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="mob-menu__item">
+						<a class="mob-menu__link sign-link" data-sign="enter">Войти</a>
+					</li>
+					<li class="mob-menu__item">
+						<a class="mob-menu__link sign-link" data-sign="registration">Зарегистрироваться</a>
+					</li>
+				</ul>
+			</aside>
+		</div>
+		<div class="app__main">
+			<header class="header">
+				<div class="header__top">
+					<div class="container">
+						<div class="header__top-wrap flex align-center">
+							<button class="header__mob-menu-btn">
+								<div class="menu-mob-btn">
+									<span class="menu-mob-btn__bars"></span>
+									<span class="menu-mob-btn__bars"></span>
+									<span class="menu-mob-btn__bars"></span>
+								</div>
+							</button>
+							<a href="" class="header__logo">
+								<img src="./img/logo.png" alt="logo">
+							</a>
+							<div class="header__search">
+								<div class="search-panel">
+
+									<div class="search-panel__desk">
+										<form action="">
+											<fieldset>
+												<div class="search-panel__wrap flex">
+													<input type="text" class="search-panel__input search-panel__input--fl" id="headerSearch" placeholder="Искать..." autocomplete="off">
+													<button class="search-panel__submit button button--brand" type="submit"><i class="fas fa-search"></i></button>
+												</div>
+												<div class="search-panel__dropdown" id="headerSearchDropdown">
+													<ul class="search-panel__list">
+														<li class="search-panel__item">
+															<a class="search-panel__heading">Результат поиска</a>
+														</li>
+														<li class="search-panel__item">
+															<a href="" class="search-panel__link">Категория один</a>
+														</li>
+														<li class="search-panel__item">
+															<a href="" class="search-panel__link">Категория два</a>
+														</li>
+														<li class="search-panel__item">
+															<a href="" class="search-panel__link">Категория три</a>
+														</li>
+													</ul>
+												</div>
+											</fieldset>
+										</form>
+									</div>
+									
+									<div class="search-panel__mob">
+										<form action="">
+											<fieldset>
+												<div class="search-panel__wrap flex">
+													<input type="text" class="search-panel__input search-panel__input--fl" id="headerSearchMob" placeholder="Искать..." autocomplete="off">
+													<button class="search-panel__submit button button--brand" type="submit">
+														<i class="fas fa-search fa-lg"></i>
+													</button>
+													<a class="search-panel__disable button button--brand">
+														<i class="fas fa-times fa-lg"></i>
+													</a>
+												</div>
+												<div class="search-panel__dropdown mob" id="headerSearchDropdownMob">
+													<ul class="search-panel__list">
+														<li class="search-panel__item">
+															<a class="search-panel__heading">Результат поиска</a>
+														</li>
+														<li class="search-panel__item">
+															<a href="" class="search-panel__link">Категория один</a>
+														</li>
+														<li class="search-panel__item">
+															<a href="" class="search-panel__link">Категория два</a>
+														</li>
+														<li class="search-panel__item">
+															<a href="" class="search-panel__link">Категория три</a>
+														</li>
+													</ul>
+												</div>
+											</fieldset>
+										</form>
+									</div>
+
+								</div>
+								<button class="search-mob-btn">
+									<i class="fas fa-search"></i>
+								</button>
+							</div>
+							<div class="header__upload">
+								<a href="" class="button button--secondary">
+									<i class="fas fa-cloud-download-alt mr-2"></i>Загрузить
+								</a>
+							</div>
+							<div class="header__auth">
+								<ul class="horizontal-list">
+									<li class="horizontal-list__item">
+										<a class="horizontal-list__link sign-link" data-sign="enter">Войти</a>
+									</li>
+									<li class="horizontal-list__item">
+										<span class="horizontal-list__divider">|</span>
+									</li>
+									<li class="horizontal-list__item">
+										<a class="horizontal-list__link sign-link" data-sign="registration">Зарегистрироваться</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__bottom">
+					<div class="container">
+						<nav class="main-nav">
+							<ul class="main-nav__list flex">
+								<li class="main-nav__item">
+									<a href="" class="main-nav__link active">Главная</a>
+								</li>
+								<li class="main-nav__item">
+									<a href="" class="main-nav__link">Видео<i class="fas fa-sort-down"></i></a>
+									<div class="main-nav__dropdown">
+										<div class="container">
+											<div class="subcategory">
+												<div class="flex">
+													<div class="subcategory__aside" style="width: 300px">
+														<aside>
+															<h2 class="subcategory__heading">Знакомься с видео</h2>
+															<ul class="subcategory__nav-list">
+																<li class="subcategory__nav-item">
+																	<a href="" class="subcategory__nav-link">
+																		<i class="far fa-thumbs-up"></i> Рекомендуемые
+																	</a>
+																</li>
+																<li class="subcategory__nav-item">
+																	<a href="" class="subcategory__nav-link">
+																		<i class="fas fa-fire-alt"></i> Самые горячие
+																	</a>
+																</li>
+																<li class="subcategory__nav-item">
+																	<a href="" class="subcategory__nav-link">
+																		<i class="far fa-eye"></i> Больше просмотров
+																	</a>
+																</li>
+															</ul>
+														</aside>
+													</div>
+													<div class="subcategory__main">
+														<div class="subcategory__col row3x">
+															<h3 class="subcategory__col-head">Самые горячие</h3>
+															<article class="article-item">
+																<a href="#" class="article-item__media video">
+																	<video class="article-item__video" src="https://cdn.bitdegree.org/learn/Pexels%20Videos%203373.mp4?raw=true" muted></video>
+																	<div class="article-item__timestamp">
+																		
+																	</div>
+																	<div class="article-item__quality">
+																		HD
+																	</div>
+																</a>
+																<a href="">
+																	<h4 class="article-item__title">
+																		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero esse tempore quisquam tempora expedita et molestias obcaecati! Praesentium laboriosam, eius!
+																	</h4>
+																</a>
+																<a href="" class="article-item__author">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+																<span class="article-item__views">
+																	<i class="far fa-eye"></i> 10000
+																</span>
+															</article>
+
+															<article class="article-item">
+																<a href="#" class="article-item__media video">
+																	<video class="article-item__video" src="https://mobamotion.mobatek.net/samples/sample-mp4-video.mp4" muted></video>
+																	<div class="article-item__timestamp">
+																		
+																	</div>
+																	<div class="article-item__quality">
+																		HD
+																	</div>
+																</a>
+																<a href="">
+																	<h4 class="article-item__title">
+																		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero esse tempore quisquam tempora expedita et molestias obcaecati! Praesentium laboriosam, eius!
+																	</h4>
+																</a>
+																<a href="" class="article-item__author">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+																<span class="article-item__views">
+																	<i class="far fa-eye"></i> 10000
+																</span>
+															</article>
+
+															<a href="" class="subcategory__col-more-btn">
+																Показать больше
+															</a>
+														</div>
+														<div class="subcategory__col row3x">
+															<h3 class="subcategory__col-head">Рекомендации</h3>
+															<article class="article-item">
+																<a href="#" class="article-item__media video">
+																	<video class="article-item__video" src="https://www.w3schools.com/html/mov_bbb.mp4" muted></video>
+																	<div class="article-item__timestamp">
+																		
+																	</div>
+																	<div class="article-item__quality">
+																		HD
+																	</div>
+																</a>
+																<a href="">
+																	<h4 class="article-item__title">
+																		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero esse tempore quisquam tempora expedita et molestias obcaecati! Praesentium laboriosam, eius!
+																	</h4>
+																</a>
+																<a href="" class="article-item__author">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+																<span class="article-item__views">
+																	<i class="far fa-eye"></i> 10000
+																</span>
+															</article>
+
+															<article class="article-item">
+																<a href="#" class="article-item__media video">
+																	<video class="article-item__video" src="https://www.w3schools.com/html/mov_bbb.mp4" muted></video>
+																	<div class="article-item__timestamp">
+																		
+																	</div>
+																	<div class="article-item__quality">
+																		HD
+																	</div>
+																</a>
+																<a href="">
+																	<h4 class="article-item__title">
+																		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero esse tempore quisquam tempora expedita et molestias obcaecati! Praesentium laboriosam, eius!
+																	</h4>
+																</a>
+																<a href="" class="article-item__author">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+																<span class="article-item__views">
+																	<i class="far fa-eye"></i> 10000
+																</span>
+															</article>
+
+															<a href="" class="subcategory__col-more-btn">
+																Показать больше
+															</a>
+														</div>
+														<div class="subcategory__col row3x">
+															<h3 class="subcategory__col-head">Много просмотров</h3>
+															<article class="article-item">
+																<a href="#" class="article-item__media video">
+																	<video class="article-item__video" src="https://www.w3schools.com/html/mov_bbb.mp4" muted></video>
+																	<div class="article-item__timestamp">
+																		
+																	</div>
+																	<div class="article-item__quality">
+																		HD
+																	</div>
+																</a>
+																<a href="">
+																	<h4 class="article-item__title">
+																		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero esse tempore quisquam tempora expedita et molestias obcaecati! Praesentium laboriosam, eius!
+																	</h4>
+																</a>
+																<a href="" class="article-item__author">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+																<span class="article-item__views">
+																	<i class="far fa-eye"></i> 10000
+																</span>
+															</article>
+
+															<article class="article-item">
+																<a href="#" class="article-item__media video">
+																	<video class="article-item__video" src="https://www.w3schools.com/html/mov_bbb.mp4" muted></video>
+																	<div class="article-item__timestamp">
+																		
+																	</div>
+																	<div class="article-item__quality">
+																		HD
+																	</div>
+																</a>
+																<a href="">
+																	<h4 class="article-item__title">
+																		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero esse tempore quisquam tempora expedita et molestias obcaecati! Praesentium laboriosam, eius!
+																	</h4>
+																</a>
+																<a href="" class="article-item__author">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+																<span class="article-item__views">
+																	<i class="far fa-eye"></i> 10000
+																</span>
+															</article>
+
+															<a href="" class="subcategory__col-more-btn">
+																Показать больше
+															</a>
+														</div>
+													</div>
+													<div class="subcategory__tags">
+														<h2 class="subcategory__heading">Популярные запросы</h2>
+														<ul class="tag__list">
+															<li class="tag__item">
+																<a href="" class="tag__link">Раз</a>
+															</li>
+															<li class="tag__item">
+																<a href="" class="tag__link">Два два</a>
+															</li>
+															<li class="tag__item">
+																<a href="" class="tag__link">Три три три</a>
+															</li>
+															<li class="tag__item">
+																<a href="" class="tag__link">Четыре</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="main-nav__item">
+									<a href="" class="main-nav__link">Категории<i class="fas fa-sort-down"></i></a>
+									<div class="main-nav__dropdown">
+										<div class="container">
+											<div class="subcategory">
+												<div class="flex">
+													<div class="subcategory__aside" style="width: 300px">
+														<aside>
+															<h2 class="subcategory__heading">Популярные категории</h2>
+															<ul class="subcategory__nav-list">
+																<li class="subcategory__nav-item">
+																	<a href="" class="subcategory__nav-link">
+																		Первая
+																	</a>
+																</li>
+																<li class="subcategory__nav-item">
+																	<a href="" class="subcategory__nav-link">
+																		Вторая
+																	</a>
+																</li>
+																<li class="subcategory__nav-item">
+																	<a href="" class="subcategory__nav-link">
+																		Третья
+																	</a>
+																</li>
+															</ul>
+														</aside>
+													</div>
+													<div class="subcategory__main">
+														<div class="categories-dropdown">
+															<ul class="categories-dropdown__list">
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория категория 1 </a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 2</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 3</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 4</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 5</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 6</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 7</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 8</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 9</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 10</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория категория 1 </a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 2</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 3</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 4</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 5</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 6</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 7</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 8</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 9</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 10</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория категория 1 </a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 2</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 3</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 4</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 5</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 6</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 7</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 8</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 9</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория 10</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+																<li class="categories-dropdown__item">
+																	<a href="" class="categories-dropdown__link">Категория</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="subcategory__tags">
+														<h2 class="subcategory__heading">Популярные запросы</h2>
+														<ul class="tag__list">
+															<li class="tag__item">
+																<a href="" class="tag__link">Раз</a>
+															</li>
+															<li class="tag__item">
+																<a href="" class="tag__link">Два два</a>
+															</li>
+															<li class="tag__item">
+																<a href="" class="tag__link">Три три три</a>
+															</li>
+															<li class="tag__item">
+																<a href="" class="tag__link">Четыре</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="main-nav__item">
+									<a href="" class="main-nav__link">Порнозвезды<i class="fas fa-sort-down"></i></a>
+									<div class="main-nav__dropdown">
+										<div class="container">
+											<div class="subcategory">
+												<div class="flex">
+													<div class="subcategory__aside" style="width: 300px">
+														<aside>
+															<h2 class="subcategory__heading">Популярные порнозвезды</h2>
+															<ul class="subcategory__nav-list">
+																<li class="subcategory__nav-item">
+																	<a href="" class="subcategory__nav-link">
+																		Какая-то телка 1
+																	</a>
+																</li>
+																<li class="subcategory__nav-item">
+																	<a href="" class="subcategory__nav-link">
+																		Какая-то телка 2
+																	</a>
+																</li>
+																<li class="subcategory__nav-item">
+																	<a href="" class="subcategory__nav-link">
+																		Какая-то телка 3
+																	</a>
+																</li>
+															</ul>
+														</aside>
+													</div>
+													<div class="subcategory__main">
+														<div class="subcategory__col row4x">
+															<h3 class="subcategory__col-head">Самые рейтинговые</h3>
+															<article class="article-item">
+																<a href="#" class="article-item__media photo">
+																	<div class="article-item__photo" style="background-image: url('https://via.placeholder.com/300x400">
+																		<div class="article-item__img-text">
+																			Johanna Johanovna
+																		</div>
+																	</div>
+																</a>
+															</article>
+															<article class="article-item">
+																<a href="#" class="article-item__media photo">
+																	<div class="article-item__photo" style="background-image: url('https://via.placeholder.com/300x400">
+																		<div class="article-item__img-text">
+																			Johanna Johanovna
+																		</div>
+																	</div>
+																</a>
+															</article>
+
+															<a href="" class="subcategory__col-more-btn">
+																Показать больше
+															</a>
+														</div>
+														<div class="subcategory__col row4x">
+															<h3 class="subcategory__col-head">Самые популярные</h3>
+															<article class="article-item">
+																<a href="#" class="article-item__media photo">
+																	<div class="article-item__photo" style="background-image: url('https://via.placeholder.com/300x400">
+																		<div class="article-item__img-text">
+																			Johanna Johanovna
+																		</div>
+																	</div>
+																</a>
+															</article>
+															<article class="article-item">
+																<a href="#" class="article-item__media photo">
+																	<div class="article-item__photo" style="background-image: url('https://via.placeholder.com/300x400">
+																		<div class="article-item__img-text">
+																			Johanna Johanovna
+																		</div>
+																	</div>
+																</a>
+															</article>
+
+															<a href="" class="subcategory__col-more-btn">
+																Показать больше
+															</a>
+														</div>
+														<div class="subcategory__col row4x">
+															<h3 class="subcategory__col-head">Самые какие-то</h3>
+															<article class="article-item">
+																<a href="#" class="article-item__media photo">
+																	<div class="article-item__photo" style="background-image: url('https://via.placeholder.com/300x400">
+																		<div class="article-item__img-text">
+																			Johanna Johanovna
+																		</div>
+																	</div>
+																</a>
+															</article>
+															<article class="article-item">
+																<a href="#" class="article-item__media photo">
+																	<div class="article-item__photo" style="background-image: url('https://via.placeholder.com/300x400">
+																		<div class="article-item__img-text">
+																			Johanna Johanovna
+																		</div>
+																	</div>
+																</a>
+															</article>
+
+															<a href="" class="subcategory__col-more-btn">
+																Показать больше
+															</a>
+														</div>
+														<div class="subcategory__col row4x">
+															<h3 class="subcategory__col-head">Самые какие-то</h3>
+															<article class="article-item">
+																<a href="#" class="article-item__media photo">
+																	<div class="article-item__photo" style="background-image: url('https://lh3.googleusercontent.com/proxy/iNYRpUfyOWc4tQDRw93ruvuQGe-41j--xJZtCjWSdV-dyfBz3Bb3rzL2dTNgI8MuBUHNMdcBvcEt_D908t4i_QHhHObfzLhn6AXk1ymX">
+																		<div class="article-item__img-text">
+																			Johanna Johanovna
+																		</div>
+																	</div>
+																</a>
+															</article>
+															<article class="article-item">
+																<a href="#" class="article-item__media photo">
+																	<div class="article-item__photo" style="background-image: url('https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg">
+																		<div class="article-item__img-text">
+																			Johanna Johanovna
+																		</div>
+																	</div>
+																</a>
+															</article>
+
+															<a href="" class="subcategory__col-more-btn">
+																Показать больше
+															</a>
+														</div>
+													</div>
+													<div class="subcategory__tags">
+														<h2 class="subcategory__heading">Популярные запросы</h2>
+														<ul class="tag__list">
+															<li class="tag__item">
+																<a href="" class="tag__link">Раз</a>
+															</li>
+															<li class="tag__item">
+																<a href="" class="tag__link">Два два</a>
+															</li>
+															<li class="tag__item">
+																<a href="" class="tag__link">Три три три</a>
+															</li>
+															<li class="tag__item">
+																<a href="" class="tag__link">Четыре</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+
+			<div class="main">
+				<div class="container">
+					<div class="flex">
+						<main class="main__content main__content--left">
+							 <video
+							    id="my-video"
+							    class="video-js"
+							    controls
+							    preload="auto"
+							    data-setup='{"muted": true, "controls": true}'
+							  >
+							   
+							    <source src="http://www.exit109.com/~dnn/clips/RW20seconds_1.mp4"/>
+							    <p class="vjs-no-js">
+							      To view this video please enable JavaScript, and consider upgrading to a
+							      web browser that
+							      <a href="https://videojs.com/html5-video-support/" target="_blank"
+							        >supports HTML5 video</a
+							      >
+							    </p>
+							  </video>
+							  <div class="main__video-info section-overlay">
+							  	<h1 class="main__video-title">
+							  		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laudantium eveniet voluptatem dolorem, et rerum, odio dolores dignissimos officia recusandae!
+							  	</h1>
+							  	<div style="display: none" class="main__video-info-wrap flex align-center justify-between">
+							  		<div class="main__video-views">
+							  			Просмотров: 100
+							  		</div>
+							  		<div class="main__video-socials">
+							  			<ul class="socials__list flex align-center">
+							  				<li class="socials__item">
+							  					Поделиться:
+							  				</li>
+							  				<li class="socials__item">
+							  					<a href="" class="socials__link">
+							  						<i class="fab fa-vk"></i>
+							  					</a>
+							  				</li>
+							  				<li class="socials__item">
+							  					<a href="" class="socials__link">
+							  						<i class="fab fa-facebook-square"></i>
+							  					</a>
+							  				</li>
+							  				<li class="socials__item">
+							  					<a href="" class="socials__link">
+							  						<i class="fab fa-odnoklassniki-square"></i>
+							  					</a>
+							  				</li>
+							  			</ul>
+							  		</div>
+							  		<div class="main__video-rating">
+							  			<a class="main__video-like">
+							  				<i class="far fa-thumbs-up"></i>
+							  			</a>
+							  			<div class="main__video-votes">
+							  				<div class="main__video-percent">80%</div>
+							  				<div class="main__video-divider">
+							  					<div class="main__video-divider-fill"></div>
+							  				</div>
+							  				<div class="main__video-all-votes">Голосов: 100</div>
+							  			</div>
+							  			<a class="main__video-dislike">
+							  				<i class="far fa-thumbs-down"></i>
+							  			</a>
+							  		</div>
+							  	</div>
+
+								<!-- tabs under the video player -->
+								<ul class="nav nav-tabs" id="myTab" role="tablist">
+								  <li class="nav-item">
+								    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Описание</a>
+								  </li>
+								  <li class="nav-item">
+								    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Добавить в</a>
+								  </li>
+								</ul>
+								<!-- tabs panes under the video player -->
+								<div class="tab-content" id="myTabContent">
+								  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+								  	<div class="main__video-info-wrap flex align-center justify-between">
+								  		<div class="main__video-views">
+								  			Просмотров: 100
+								  		</div>
+								  		<div class="main__video-socials">
+								  			<ul class="socials__list flex align-center">
+								  				<li class="socials__item">
+								  					Поделиться:
+								  				</li>
+								  				<li class="socials__item">
+								  					<a href="" class="socials__link">
+								  						<i class="fab fa-vk"></i>
+								  					</a>
+								  				</li>
+								  				<li class="socials__item">
+								  					<a href="" class="socials__link">
+								  						<i class="fab fa-facebook-square"></i>
+								  					</a>
+								  				</li>
+								  				<li class="socials__item">
+								  					<a href="" class="socials__link">
+								  						<i class="fab fa-odnoklassniki-square"></i>
+								  					</a>
+								  				</li>
+								  			</ul>
+								  		</div>
+								  		<div class="main__video-rating">
+								  			<a class="main__video-like">
+								  				<i class="far fa-thumbs-up"></i>
+								  			</a>
+								  			<div class="main__video-votes">
+								  				<div class="main__video-percent">80%</div>
+								  				<div class="main__video-divider">
+								  					<div class="main__video-divider-fill"></div>
+								  				</div>
+								  				<div class="main__video-all-votes">Голосов: 100</div>
+								  			</div>
+								  			<a class="main__video-dislike">
+								  				<i class="far fa-thumbs-down"></i>
+								  			</a>
+								  		</div>
+							  		</div>
+									<p class="main__video-info-headings">
+								  		Категория: <a href="" class="main__video-category">какая-то</a>
+								  	</p>
+								  	<ul class="tag__list">
+								  		<li class="tag__item">
+								  			<a href="" class="tag__link">Один</a>
+								  		</li>
+								  		<li class="tag__item">
+								  			<a href="" class="tag__link">Два</a>
+								  		</li>
+								  		<li class="tag__item">
+								  			<a href="" class="tag__link">Три</a>
+								  		</li>
+								  		<li class="tag__item">
+								  			<a href="" class="tag__link">Четыре</a>
+								  		</li>
+								  		<li class="tag__item">
+								  			<a href="" class="tag__link">Пять</a>
+								  		</li>
+								  	</ul>
+								  </div>
+								  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+								  	<h2 class="section-heading mt-3">Добавить к плейлисту</h2>
+								  	<p class="section-text">
+								  		<a href="#" class="sign-link" data-sign="enter">Войдите</a> или <a href="#" class="sign-link" data-sign="registration">Зарегистрируйтесь</a> чтобы добавить видео
+								  	</p>
+
+									<h2 class="section-heading section-heading--sm mt-3">Выберите плейлист или создайте новый</h2>
+								  	<div class="add-folder">
+								  		<p>
+								  			Плейлистов не найдено. Создайте новый (видео будет добавлено в него автоматически).
+								  		</p>
+								  		<p>
+								  			Выберите плейлист в который добавить это видео или создайте новый плейлист (видео будет добавлено в него автоматически):
+								  		</p>
+
+								  		<ul class="add-folder__list">
+								  			<li class="add-folder__item">
+								  				<a href="" class="add-folder__link">
+								  					<i class="far fa-folder-open"></i>Плейлист 1
+								  				</a>
+								  			</li>
+								  			<li class="add-folder__item">
+								  				<a href="" class="add-folder__link">
+								  					<i class="far fa-folder-open"></i>Плейлист 2 (добавлено)
+								  				</a>
+								  			</li>
+								  			<li class="add-folder__item">
+								  				<a href="" class="add-folder__link">
+								  					<i class="far fa-folder-open"></i>Плейлист 3
+								  				</a>
+								  			</li>
+								  		</ul>
+								  		<div class="add-folder__input-block">
+								  			<form action="">
+								  				<input type="text" class="input-style" placeholder="Введите название..." minlength="2" maxlength="20" required>
+								  				<button class="button button--brand">Добавить</button>
+								  			</form>
+								  		</div>
+								  	</div>
+								  </div>
+								</div>
+							  </div>
+
+							  <div class="main__recommended section-overlay">
+
+								<h2 class="section-heading">Еще видео:</h2>
+		
+								<div class="flex flex-wrap">
+									<article class="article-item article-item--main-page">
+										<a href="#" class="article-item__media video">
+											<video class="article-item__video" src="https://cdn.bitdegree.org/learn/Pexels%20Videos%203373.mp4?raw=true" muted></video>
+											<div class="article-item__timestamp">
+												
+											</div>
+											<div class="article-item__quality">
+												HD
+											</div>
+										</a>
+										<a href="">
+											<h4 class="article-item__title">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero esse tempore quisquam tempora expedita et molestias obcaecati! Praesentium laboriosam, eius!
+											</h4>
+										</a>
+										<a href="" class="article-item__author">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+										<span class="article-item__views">
+											<i class="far fa-eye"></i> 10000
+										</span>
+									</article>
+									<article class="article-item article-item--main-page">
+										<a href="#" class="article-item__media video">
+											<video class="article-item__video" src="https://cdn.bitdegree.org/learn/Pexels%20Videos%203373.mp4?raw=true" muted></video>
+											<div class="article-item__timestamp">
+												
+											</div>
+											<div class="article-item__quality">
+												HD
+											</div>
+										</a>
+										<a href="">
+											<h4 class="article-item__title">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero esse tempore quisquam tempora expedita et molestias obcaecati! Praesentium laboriosam, eius!
+											</h4>
+										</a>
+										<a href="" class="article-item__author">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+										<span class="article-item__views">
+											<i class="far fa-eye"></i> 10000
+										</span>
+									</article>
+									<article class="article-item article-item--main-page">
+										<a href="#" class="article-item__media video">
+											<video class="article-item__video" src="https://cdn.bitdegree.org/learn/Pexels%20Videos%203373.mp4?raw=true" muted></video>
+											<div class="article-item__timestamp">
+												
+											</div>
+											<div class="article-item__quality">
+												HD
+											</div>
+										</a>
+										<a href="">
+											<h4 class="article-item__title">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero esse tempore quisquam tempora expedita et molestias obcaecati! Praesentium laboriosam, eius!
+											</h4>
+										</a>
+										<a href="" class="article-item__author">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+										<span class="article-item__views">
+											<i class="far fa-eye"></i> 10000
+										</span>
+									</article>
+									<article class="article-item article-item--main-page">
+										<a href="#" class="article-item__media video">
+											<video class="article-item__video" src="https://cdn.bitdegree.org/learn/Pexels%20Videos%203373.mp4?raw=true" muted></video>
+											<div class="article-item__timestamp">
+												
+											</div>
+											<div class="article-item__quality">
+												HD
+											</div>
+										</a>
+										<a href="">
+											<h4 class="article-item__title">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero esse tempore quisquam tempora expedita et molestias obcaecati! Praesentium laboriosam, eius!
+											</h4>
+										</a>
+										<a href="" class="article-item__author">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+										<span class="article-item__views">
+											<i class="far fa-eye"></i> 10000
+										</span>
+									</article>
+									<article class="article-item article-item--main-page">
+										<a href="#" class="article-item__media video">
+											<video class="article-item__video" src="https://cdn.bitdegree.org/learn/Pexels%20Videos%203373.mp4?raw=true" muted></video>
+											<div class="article-item__timestamp">
+												
+											</div>
+											<div class="article-item__quality">
+												HD
+											</div>
+										</a>
+										<a href="">
+											<h4 class="article-item__title">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero esse tempore quisquam tempora expedita et molestias obcaecati! Praesentium laboriosam, eius!
+											</h4>
+										</a>
+										<a href="" class="article-item__author">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+										<span class="article-item__views">
+											<i class="far fa-eye"></i> 10000
+										</span>
+									</article>
+								</div>
+							  </div>
+
+							  <div class="main__comments section-overlay">
+							  	<h2 class="section-heading">Комментарии:</h2>
+								
+								<div class="comments">
+									<form action="">
+										<textarea name="" id="" class="comments__textarea" placeholder="Введите ваше сообщение..." required></textarea>
+										<div class="comments__input-text-wrap flex">
+											<input type="text" class="comments__user-name input-style" placeholder="Ваше имя..." minlength="2" maxlength="20" required>
+											<button class="button button--brand">Отправить</button>
+										</div>
+									</form>
+
+									<div class="comments__feed">
+										<div class="comments__item">
+											<div class="comments__user-info">
+												<p class="comments__user-nameCom">
+													Alexandro
+												</p>
+												<div class="comments__user-photo" style="background-image: url('https://www.pngitem.com/pimgs/m/294-2947257_interface-icons-user-avatar-profile-user-avatar-png.png');"></div>
+											</div>
+											<div class="comments__user-text">
+												<time class="comments__timestamp">05 марта 2020 11:20:35</time>
+												<p>
+													<span class="comments__user-nameCom mobile">Alexandro Safono</span>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae magni, molestias facere repellat error vel! Commodi perspiciatis quaerat, ducimus fugit rerum laboriosam nostrum id ab ipsa at laudantium reiciendis nulla. Illo unde nostrum earum explicabo in magni cum aliquam repellat architecto, eveniet molestias tempora dolorem, ex quibusdam repellendus odio cupiditate impedit, asperiores aperiam natus voluptas assumenda sed quis debitis. Nobis cumque libero laboriosam nulla ducimus deleniti adipisci iure accusamus, fuga. Voluptatem, omnis tenetur alias porro tempora, quis consectetur repellat quibusdam iste ea voluptates fugiat quam, necessitatibus quidem aspernatur a officia unde. Hic iusto consectetur iure optio quis itaque minus ullam!</p>
+												<div class="comments__rating">
+													<a class="comments__like">
+														<i class="far fa-thumbs-up"></i>
+													</a>
+													<div class="comments__votes comments__votes--like">
+														3
+													</div>
+													<a class="comments__dislike">
+														<i class="far fa-thumbs-down"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="comments__item">
+											<div class="comments__user-info">
+												<p class="comments__user-nameCom">
+													Alexandro
+												</p>
+												<div class="comments__user-photo" style="background-image: url('https://www.pngitem.com/pimgs/m/294-2947257_interface-icons-user-avatar-profile-user-avatar-png.png');"></div>
+											</div>
+											<div class="comments__user-text">
+												<time class="comments__timestamp">05 марта 2020 11:20:35</time>
+												<p>
+													<span class="comments__user-nameCom mobile">Alexandro Safono</span>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere tenetur rerum mollitia nihil, in sint ad ducimus vero, reprehenderit eaque!</p>
+												<div class="comments__rating">
+													<a class="comments__like">
+														<i class="far fa-thumbs-up"></i>
+													</a>
+													<div class="comments__votes comments__votes--dislike">
+														-3
+													</div>
+													<a class="comments__dislike">
+														<i class="far fa-thumbs-down"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="site-pagination">
+											<ul class="site-pagination__list">
+												<li class="site-pagination__item">
+													<a href="" class="button button--pagination">
+														<i class="fas fa-angle-double-left"></i>
+													</a>
+												</li>
+												<li class="site-pagination__item">
+													<a href="" class="button button--pagination active">
+														1
+													</a>
+												</li>
+												<li class="site-pagination__item">
+													<a href="" class="button button--pagination">
+														2
+													</a>
+												</li>
+												<li class="site-pagination__item">
+													<a href="" class="button button--pagination">
+														3
+													</a>
+												</li>
+												<li class="site-pagination__item">
+													<a href="" class="button button--pagination">
+														4
+													</a>
+												</li>
+												<li class="site-pagination__item">
+													<a href="" class="button button--pagination">
+														<i class="fas fa-angle-double-right"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+							  </div>
+						</main>
+						<aside class="main__aside">
+							<div class="section-overlay">
+								<h2 class="section-heading">Смотреть еще:</h2>
+								<article class="article-item">
+									<a href="#" class="article-item__media video">
+										<video class="article-item__video" src="https://cdn.bitdegree.org/learn/Pexels%20Videos%203373.mp4?raw=true" muted></video>
+										<div class="article-item__timestamp">
+											
+										</div>
+										<div class="article-item__quality">
+											HD
+										</div>
+									</a>
+									<a href="">
+										<h4 class="article-item__title">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero esse tempore quisquam tempora expedita et molestias obcaecati! Praesentium laboriosam, eius!
+										</h4>
+									</a>
+									<a href="" class="article-item__author">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+									<span class="article-item__views">
+										<i class="far fa-eye"></i> 10000
+									</span>
+								</article>
+
+								<article class="article-item">
+									<a href="#" class="article-item__media video">
+										<video class="article-item__video" src="https://cdn.bitdegree.org/learn/Pexels%20Videos%203373.mp4?raw=true" muted></video>
+										<div class="article-item__timestamp">
+											
+										</div>
+										<div class="article-item__quality">
+											HD
+										</div>
+									</a>
+									<a href="">
+										<h4 class="article-item__title">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero esse tempore quisquam tempora expedita et molestias obcaecati! Praesentium laboriosam, eius!
+										</h4>
+									</a>
+									<a href="" class="article-item__author">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+									<span class="article-item__views">
+										<i class="far fa-eye"></i> 10000
+									</span>
+								</article>
+
+								<article class="article-item">
+									<a href="#" class="article-item__media video">
+										<video class="article-item__video" src="https://cdn.bitdegree.org/learn/Pexels%20Videos%203373.mp4?raw=true" muted></video>
+										<div class="article-item__timestamp">
+											
+										</div>
+										<div class="article-item__quality">
+											HD
+										</div>
+									</a>
+									<a href="">
+										<h4 class="article-item__title">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero esse tempore quisquam tempora expedita et molestias obcaecati! Praesentium laboriosam, eius!
+										</h4>
+									</a>
+									<a href="" class="article-item__author">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+									<span class="article-item__views">
+										<i class="far fa-eye"></i> 10000
+									</span>
+								</article>
+
+								<article class="article-item">
+									<a href="#" class="article-item__media video">
+										<video class="article-item__video" src="https://cdn.bitdegree.org/learn/Pexels%20Videos%203373.mp4?raw=true" muted></video>
+										<div class="article-item__timestamp">
+											
+										</div>
+										<div class="article-item__quality">
+											HD
+										</div>
+									</a>
+									<a href="">
+										<h4 class="article-item__title">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero esse tempore quisquam tempora expedita et molestias obcaecati! Praesentium laboriosam, eius!
+										</h4>
+									</a>
+									<a href="" class="article-item__author">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+									<span class="article-item__views">
+										<i class="far fa-eye"></i> 10000
+									</span>
+								</article>
+
+								<article class="article-item">
+									<a href="#" class="article-item__media video">
+										<video class="article-item__video" src="https://cdn.bitdegree.org/learn/Pexels%20Videos%203373.mp4?raw=true" muted></video>
+										<div class="article-item__timestamp">
+											
+										</div>
+										<div class="article-item__quality">
+											HD
+										</div>
+									</a>
+									<a href="">
+										<h4 class="article-item__title">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero esse tempore quisquam tempora expedita et molestias obcaecati! Praesentium laboriosam, eius!
+										</h4>
+									</a>
+									<a href="" class="article-item__author">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+									<span class="article-item__views">
+										<i class="far fa-eye"></i> 10000
+									</span>
+								</article>
+
+								<article class="article-item">
+									<a href="#" class="article-item__media video">
+										<video class="article-item__video" src="https://cdn.bitdegree.org/learn/Pexels%20Videos%203373.mp4?raw=true" muted></video>
+										<div class="article-item__timestamp">
+											
+										</div>
+										<div class="article-item__quality">
+											HD
+										</div>
+									</a>
+									<a href="">
+										<h4 class="article-item__title">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero esse tempore quisquam tempora expedita et molestias obcaecati! Praesentium laboriosam, eius!
+										</h4>
+									</a>
+									<a href="" class="article-item__author">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+									<span class="article-item__views">
+										<i class="far fa-eye"></i> 10000
+									</span>
+								</article>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="app__modal">
+			<div class="app__modal-overlay">
+				<div class="app__modal-inner">
+					<span class="app__modal-close">×</span>
+					
+						
+						<div class="app__modal-sign-block" data-sign-block="enter">
+							<h2 class="app__modal-title">Войти или зарегистрироваться</h2>
+							<form action="">
+								<input type="text" class="input-style" placeholder="Имя пользователя (свыше 6 знаков)" minlength="6" name="" required>
+								<input type="password" class="input-style" placeholder="Пароль (свыше 6 символов)" minlength="6" name="" required>
+								<div class="section-overlay">
+									<label for="remember-checkbox" class="label-checkbox">
+										<input type="checkbox" id="remember-checkbox" value="remember" name="" checked>Запомнить меня на этом компьютере (не рекомендуется при использовании общедоступных компьютеров)
+									</label>
+								</div>
+								<button type="submit" class="app__modal-submit button button--brand">войти</button>
+							</form>
+							<div class="flex justify-around">
+								<a class="app__modal-secondary-links sign-link" data-sign="password-recover">Забыли пароль?</a>
+								<span>|</span>
+								<a class="app__modal-secondary-links sign-link" data-sign="registration">Зарегистрироваться</a>
+							</div>
+						</div>
+
+						<div class="app__modal-sign-block" data-sign-block="registration">
+							<h2 class="app__modal-title">Войти или зарегистрироваться</h2>
+							<form action="">
+								<input type="email" class="input-style" placeholder="Ваш Email (свыше 4 знаков)" minlength="4" name="" required>
+								<input type="text" class="input-style" placeholder="Имя пользователя (свыше 6 знаков)" minlength="6" name="" required>
+								<input type="password" class="input-style" placeholder="Пароль (свыше 6 символов)" minlength="6" name="" required>
+								<br>
+								<button type="submit" class="app__modal-submit button button--brand">зарегистрироваться</button>
+							</form>
+							<div class="flex justify-around">
+								<a class="app__modal-secondary-links sign-link" data-sign="enter">Войти</a>
+							</div>
+						</div>
+
+
+						<div class="app__modal-sign-block" data-sign-block="password-recover">
+							<h2 class="app__modal-title">Восстановление пароля</h2>
+							<form action="">
+								<input type="email" class="input-style" placeholder="Ваш Email (свыше 4 знаков)" minlength="4" name="" required>
+								<button type="submit" class="app__modal-submit button button--brand">отправить</button>
+							</form>
+							<div class="section-overlay section-overlay--text">
+								Пароль будет отправлен Вам на электронную почту
+							</div>
+							<div class="flex justify-around">
+								<a class="app__modal-secondary-links sign-link" data-sign="enter">Войти</a>
+								<span>|</span>
+								<a class="app__modal-secondary-links sign-link" data-sign="registration">Зарегистрироваться</a>
+							</div>
+						</div>
+
+
+						<div class="app__modal-sign-block" data-sign-block="password-send">
+							<h2 class="app__modal-title">Пароль отправлен</h2>
+							<div class="password-send flex align-center justify-center">
+								<i class="far fa-check-circle"></i>
+							</div>
+						</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
