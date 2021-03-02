@@ -248,6 +248,6 @@ const GeoTargeting = () => {
 			
 		</div>
 	)
-}
+} 
 
 export default GeoTargeting
